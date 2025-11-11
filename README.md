@@ -67,6 +67,39 @@ The Excel dashboard (attached in the presentation folder) highlights:
 - Tenure-based churn segmentation  
 ---
 
+## ⚙️ How to Run This Project  
+
+You can easily replicate or test this analysis on your local system:
+
+### 🧩 Step 1 — Setup Database
+1. Install **MySQL** on your system.  
+2. Open **MySQL Workbench** (or any SQL editor).  
+3. Run the file `01_Create_Database_Table.sql` to create the database and table.
+
+### 🧹 Step 2 — Import Dataset
+1. Open the **Dataset** folder.  
+2. Use the command below (or import manually in MySQL):
+   ```sql
+   LOAD DATA INFILE 'path_to_dataset/churn_dataset.csv'
+   INTO TABLE Churn_Analysis
+   FIELDS TERMINATED BY ','
+   IGNORE 1 ROWS;
+Verify the data is loaded:
+
+sql
+Copy code
+SELECT COUNT(*) FROM Churn_Analysis;  
+### 📊 Step 3 — Run Analysis
+Execute 02_Data_Quality_Checks.sql to clean and validate your data.
+
+Then run 03_Churn_Analysis_Queries.sql to generate all churn insights and KPIs.  
+
+### 📈 Step 4 — Create Dashboard
+Use Excel to visualize churn trends.
+
+You can link Excel to MySQL or import the final result as .csv.
+
+Dashboard examples are shown in the Presentation folder.
 ## 💡 Key Insights  
 
 - Customers with **month-to-month contracts** have the highest churn rate.  
