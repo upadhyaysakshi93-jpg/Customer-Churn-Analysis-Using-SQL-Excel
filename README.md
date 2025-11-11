@@ -51,7 +51,20 @@ It combines **SQL-based data analysis** and an **Excel dashboard** to visualize 
 
 ---
 
+## 🧩 SQL Script Details  
 
+| File Name | Purpose |
+|------------|----------|
+| **01_Create_Database_Table.sql** | Creates database & table structure |
+| **02_Data_Quality_Checks.sql** | Performs missing value & duplicate checks |
+| **03_Churn_Analysis_Queries.sql** | Contains churn KPIs & insights (by Contract, Tenure, Payment Method, etc.) |
+
+## 📊 Dashboard & Visualization  
+
+The Excel dashboard (attached in the presentation folder) highlights:
+- Churn distribution by demographics and contract type  
+- Monthly charges comparison for churned vs retained customers  
+- Tenure-based churn segmentation  
 ---
 
 ## 💡 Key Insights  
@@ -74,11 +87,18 @@ It combines **SQL-based data analysis** and an **Excel dashboard** to visualize 
 
 ## 🎤 Presentation Report  
 
-📎 **File:** `PPT_Report/Churn_Analysis_Presentation.pptx`  
+📎 **File:** `PDF_Report/Churn_Analysis_Presentation.pdf`  
 This presentation summarizes the project insights, SQL process, and dashboard visuals.
 
 ---
 
+
+## 📘 Project Learnings  
+
+- Hands-on practice in **SQL query structuring and data validation**.  
+- Built confidence in **data storytelling using Excel dashboards**.  
+- Understood key **business metrics** that affect churn behavior.
+- 
 ## 🚀 Future Enhancements  
 
 - Create an interactive **Power BI version** of the dashboard  
